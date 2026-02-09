@@ -1,4 +1,5 @@
 # Bonus file to complete Extra Credit
+# Run `docker compose -f docker-compose-bonus.yml up -d --build` to start
 # Run `docker compose down -v` to remove volumes
 
 services:
