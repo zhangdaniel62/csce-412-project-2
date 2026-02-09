@@ -1,6 +1,39 @@
 services:
-  web:
+  web-1:
     build: .
     image: personal-website
     ports:
       - "8080:80"
+    volumes:
+      - ./site-1:/usr/share/nginx/html
+
+  web-2:
+    build: .
+    image: personal-website
+    ports:
+      - "8081:80"
+    volumes:
+      - ./site-2:/usr/share/nginx/html
+  web-3:
+      build: .
+      image: personal-website
+      ports:
+        - "8082:80"
+      volumes:
+        - ./site-3:/usr/share/nginx/html
+  web-4:
+      build: .
+      image: personal-website
+      ports:
+        - "8083:80"
+      volumes:
+        - ./site-4:/usr/share/nginx/html
+
+  web-5:
+      build: .
+      image: personal-website
+      ports:
+        - "8084:80"
+      volumes:
+        - ./site-5:/usr/share/nginx/html
+
